@@ -17,3 +17,9 @@ Generated runner scripts and private runtime configuration were excluded from th
 - Expanded README into a project-oriented overview with setup, validation, and privacy notes.
 - Added CHANGELOG, ROADMAP, CONTRIBUTING, design notes, validation checklist, and issue templates.
 - Kept the public copy free of generated runners, local settings, backups, and machine-specific paths.
+
+## 2026-06-09 - Subagent review follow-up
+
+- Maintenance reviewer and open-source readiness reviewer both flagged a README template substitution bug in the Quick Start section.
+- Fixed the script filename reference and normalized the MIT license text for GitHub license detection.
+- Kept the change limited to user-facing documentation and license metadata; no runtime behavior changed.

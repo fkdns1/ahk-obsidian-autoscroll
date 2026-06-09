@@ -16,9 +16,13 @@ Long note review sessions often need hands-off scrolling while still allowing qu
 ## Quick Start
 
 1. Install AutoHotkey v2 on Windows.
-2. Download $(System.Collections.Hashtable.Script) from this repository.
+2. Download `Obsidian_Scroll.ahk` from this repository.
 3. Review the configuration notes below.
 4. Run the script with AutoHotkey v2.
+
+## Safety and Scope
+
+This script targets Obsidian window behavior only. It does not read, parse, upload, or inspect vault contents.
 
 ## Configuration
 
