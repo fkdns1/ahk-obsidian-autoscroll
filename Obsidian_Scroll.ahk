@@ -2,6 +2,8 @@
 #SingleInstance Force
 #Warn
 
+EnsureSupportedWindowsVersion()
+
 ; Needed because Obsidian does not provide this browser-style middle-click autoscroll behavior by default.
 ; ==========================================
 ; Obsidian Browser-like Very Slow AutoScroll
@@ -43,6 +45,18 @@ global minDelayFactor := 3
 ; 추천 범위: 2 ~ 6
 
 #HotIf WinActive("ahk_exe Obsidian.exe")
+
+EnsureSupportedWindowsVersion() {
+    if (A_OSVersion = "WIN_10" || A_OSVersion = "WIN_11")
+        return
+
+    MsgBox(
+        "This script supports Windows 10 and Windows 11 only.`nDetected: " A_OSVersion,
+        "Unsupported Windows version",
+        "Iconx"
+    )
+    ExitApp(1)
+}
 
 MButton::
 {
